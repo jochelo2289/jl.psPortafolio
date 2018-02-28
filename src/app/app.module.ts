@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 
-
+// Componentes
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SliderComponent } from './components/slider/slider.component';
@@ -12,6 +13,8 @@ import { WorkComponent } from './components/work/work.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 
+// Servicios
+import { AppConfigService } from './_services/app-config.service';
 
 @NgModule({
   declarations: [
@@ -25,10 +28,8 @@ import { FooterComponent } from './components/footer/footer.component';
     ContactComponent,
     FooterComponent
   ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
+  imports: [BrowserModule, HttpClientModule],
+  providers: [AppConfigService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

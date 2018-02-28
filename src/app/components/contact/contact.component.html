@@ -1,4 +1,4 @@
-<!-- <div class="bg-color-sky-light"> -->
+<div class="bg-color-sky-light">
     <div class="container content-lg">
         <div class="row">
             <div class="col-sm-3 sm-margin-b-30">
@@ -11,23 +11,30 @@
                 <div class="row">
                     <div class="col-md-3 col-xs-6 md-margin-b-30">
                         <h5>Localización</h5>
-                        Neiva, Huila, Colombia
+                        {{ app.config?.contact.city }}
                     </div>
                     <div class="col-md-3 col-xs-6 md-margin-b-30">
                         <h5>Teléfono</h5>
-                        <a href="tel:3043838939">+57 304 383 8939</a>
+                        <ul class="list-unstyled">
+                            <li *ngFor="let tel of app.config?.contact.phone">
+                                <a [href]="'tel:' + tel">{{ tel }}</a>
+                            </li>
+                        </ul>
                     </div>
                     <div class="col-md-3 col-xs-6">
                         <h5>Email</h5>
-                        <a href="mailto:jl.ps2289@gmail.com">jl.ps2289@gmail.com</a>
-                        <a href="mailto:jl.ps@hotmail.com">jl.ps@hotmail.com</a>
+                        <ul class="list-unstyled">
+                            <li *ngFor="let email of app.config?.contact.email">
+                                <a [href]="'mailto:' + email">{{ email }}</a>
+                            </li>
+                        </ul>
                     </div>
                     <div class="col-md-3 col-xs-6">
                         <h5>Telegram</h5>
-                        <a href="https://t.me/jochelo2289" target="_bank">@jochelo2289</a>
+                        <a [href]="app.config?.social[2].url" target="_bank">{{ app.config?.social[2].nick }}</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-<!-- </div> -->
+</div>

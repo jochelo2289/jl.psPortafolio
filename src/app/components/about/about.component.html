@@ -23,11 +23,7 @@
       </div>
 
       <!-- Progress Box -->
-      <jp-progress-bar leng="HTML5" [porc]="91"></jp-progress-bar>
-      <jp-progress-bar leng="CSS / SCSS" [porc]="93"></jp-progress-bar>
-      <jp-progress-bar leng="Typescript / JavaSript" [porc]="87"></jp-progress-bar>
-      <jp-progress-bar leng="Bootstrap" [porc]="98"></jp-progress-bar>
-      <jp-progress-bar leng="Angular" [porc]="89"></jp-progress-bar>
+      <jp-progress-bar *ngFor="let exp of app.config?.experiencia" [leng]="exp.leng" [porc]="exp.exp"></jp-progress-bar>
     </div>
   </div>
 </div>

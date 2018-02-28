@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppConfigService } from '../../_services/app-config.service';
 
 @Component({
   selector: 'jp-footer',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
   public year = new Date().getFullYear();
+
+  constructor(public app: AppConfigService) { }
 }

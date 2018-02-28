@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppConfigService } from './_services/app-config.service';
 
 @Component({
   selector: 'jp-root',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styles: []
 })
 export class AppComponent {
-  title = 'jp';
+  constructor(public app: AppConfigService) {}
 }
