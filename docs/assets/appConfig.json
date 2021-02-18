@@ -2,23 +2,24 @@
     "info": {
         "name": "Jose Luis",
         "lastname": "Parra Sánchez",
-        "title": "Web Designer, MEAN Stack & Front-end Developer"
+        "title": "Web Designer, MEAN Stack, Angular, React & Front-end Developer"
     },
     "social": [
         {"icon": "icon-social-linkedin", "nick": null, "url": "https://www.linkedin.com/in/jochelo2289"},
         {"icon": "icon-screen-desktop", "nick": "@jochelo2289", "url": "https://t.me/jochelo2289"}
     ],
     "contact": {
-        "city": "Neiva, Huila - Colombia",
-        "phone": ["+57 304 383 8939"],
+        "city": "La Plata, Huila - Colombia",
+        "phone": ["(+57) (315) 685-3620"],
         "email": ["jl.ps@hotmail.com", "jl.ps2289@gmail.com"]
     },
     "experiencia": [
         {"leng": "HTML5", "exp": 91},
         {"leng": "CSS / SCSS", "exp": 93},
-        {"leng": "Typescript / JavaSript", "exp": 87},
+        {"leng": "Typescript / JavaSript", "exp": 93},
         {"leng": "Bootstrap", "exp": 98},
-        {"leng": "MongoDB / Express", "exp": 85},
-        {"leng": "Angular", "exp": 89}
+        {"leng": "MongoDB / Express", "exp": 75},
+        {"leng": "Angular", "exp": 89},
+        {"leng": "React", "exp": 85},
     ]
 }
