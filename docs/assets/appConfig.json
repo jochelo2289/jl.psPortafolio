@@ -14,12 +14,12 @@
         "email": ["jl.ps@hotmail.com", "jl.ps2289@gmail.com"]
     },
     "experiencia": [
-        {"leng": "HTML5", "exp": 91},
-        {"leng": "CSS / SCSS", "exp": 93},
-        {"leng": "Typescript / JavaSript", "exp": 93},
+        {"leng": "HTML5", "exp": 93},
+        {"leng": "CSS / SCSS", "exp": 95},
+        {"leng": "Typescript / JavaSript", "exp": 96},
         {"leng": "Bootstrap", "exp": 98},
         {"leng": "MongoDB / Express", "exp": 75},
-        {"leng": "Angular", "exp": 89},
-        {"leng": "React", "exp": 85},
+        {"leng": "Angular", "exp": 90},
+        {"leng": "React", "exp": 88}
     ]
 }
